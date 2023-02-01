@@ -1,2 +1,2 @@
-# Zoo-Animals-API
-Det här är mitt slut projekt där jag använder mig av Zoo Animals API https://rapidapi.com/ahmadawais/api/zoo-animals-api
+# LOTR-API
+Det här är mitt slut projekt där jag använder mig av LOTR API https://the-one-api.dev/
