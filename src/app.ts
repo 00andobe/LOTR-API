@@ -170,7 +170,7 @@ showMovieData(apiKey);
   
     const bookDataSection = document.getElementById("information");
     if (bookDataSection) {
-      bookDataSection.innerHTML = '<h1>These are the Lord of the Rings books in order </h1>'; // clear the content of the section
+      bookDataSection.innerHTML = '<h1>These are the Lord of the Rings books in order </h1>';
       const booksList = document.createElement("div");
       booksList.id = "books-list";
       data.docs.forEach((book) => {
