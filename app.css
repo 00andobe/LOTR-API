@@ -1,0 +1,116 @@
+body {
+  background-image: url(https://wallpapercave.com/wp/wp7486322.jpg);
+}
+
+#Header {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #000;
+  color: #fff;
+}
+button:disabled {
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.sidebar {
+  display: none;
+  border: 2px solid #fff;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  color: #fff;
+}
+.sidebar:not(:empty) {
+  display: block;
+}
+
+#information {
+  width: 100%;
+  background-color: none;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+button {
+  float: right;
+  margin-left: 10px;
+}
+
+#characters-list,
+#movies-list,
+#books-list,
+#favorites-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#characters-list div,
+#movies-list div,
+#books-list div,
+#favorites-list div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
+  width: 450px;
+  height: 450px;
+}
+#characters-list div h2,
+#movies-list div h2,
+#books-list div h2,
+#favorites-list div h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#characters-list div p,
+#movies-list div p,
+#books-list div p,
+#favorites-list div p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=app.css.map */

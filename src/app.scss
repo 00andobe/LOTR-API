@@ -1,0 +1,130 @@
+$primary-color: #fff;
+$secondary-color: #000;
+$background-image: url(https://wallpapercave.com/wp/wp7486322.jpg);
+$card-background-color: rgba(255, 255, 255, 0.1);
+$card-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+$card-border: 1px solid black;
+$card-padding: 20px;
+$card-border-radius: 5px;
+$card-width: 450px;
+$card-height: 450px;
+
+@mixin card-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $card-background-color;
+  box-shadow: $card-box-shadow;
+  border: $card-border;
+  padding: $card-padding;
+  border-radius: $card-border-radius;
+  width: $card-width;
+  height: $card-height;
+}
+
+body {
+  background-image: $background-image;
+}
+
+#Header {
+  color: $primary-color;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+@mixin button-style {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: $primary-color;
+  color: $secondary-color;
+  border: none;
+  border-radius: $card-border-radius;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    color: #999;
+    cursor: not-allowed;
+  }
+}
+
+button {
+  @include button-style;
+}
+
+.sidebar {
+  display: none;
+  border: 2px solid $primary-color;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  color: $primary-color;
+
+  &:not(:empty) {
+    display: block;
+  }
+}
+
+#information {
+  width: 100%;
+  background-color: none;
+  color: $primary-color;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+button {
+  float: right;
+  margin-left: 10px;
+}
+
+#characters-list,
+#movies-list,
+#books-list,
+#favorites-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  div {
+    @include card-style;
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+}
